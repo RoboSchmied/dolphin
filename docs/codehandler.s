@@ -246,7 +246,7 @@ _write32:
   bl _Write_32
   b _readcodes
 
-_write_string:    #endianess ?
+_write_string:    #endianness ?
   mr r9,r4
   mr r22, r4
   bne- cr7,_skip_and_align #lf code execution is false, skip string code data
